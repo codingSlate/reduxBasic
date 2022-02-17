@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.css';
-import {store} from './redux'
 
-function App() {
-  return <div store={store}>check console</div>;
+function App(props) {
+  console.log("From App component ", props.store.getState().user);
+  return <div>Hello</div>;
 }
 export default App;
